@@ -23,4 +23,8 @@ export default tseslint.config({
       { allowConstantExport: true },
     ],
   },
+  "rules": {
+  "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "React" }]
+}
+
 })

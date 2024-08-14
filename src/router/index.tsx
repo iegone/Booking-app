@@ -1,5 +1,5 @@
-import App from "@/App.tsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "../App";
+import { createBrowserRouter,  } from "react-router-dom";
 import Error from "@/views/Errors";
 import Home from "@/views/Home";
 import About from "@/views/About";
@@ -26,12 +26,11 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "/*",
+        element: <Error code={404} massage={"Page Not Found"} />,
+      },
     ],
-  },
-
-  {
-    path: "/*",
-    element: <Error code={404} massage={"Page Not Found"} />,
   },
 ]);
 export default router;

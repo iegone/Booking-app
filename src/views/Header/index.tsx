@@ -1,22 +1,13 @@
-import React from 'react'
-
 export default function Header() {
   return (
-    <div className="w-full h-16 flex justify-items-center items-center bg-black align-middle">
-      <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+    <div className="p-7 min-w-full flex justify-center items-center bg-black ">
+      <ul className="w-full flex justify-center items-center  text-sm font-medium text-white ">
         <li>
+          <a href="/Home" className="hover:underline me-4 md:me-6">
+            Home
+          </a>
           <a href="/About" className="hover:underline me-4 md:me-6">
             About
-          </a>
-        </li>
-        <li>
-          <a href="/Privacy-Policy" className="hover:underline me-4 md:me-6">
-            Privacy Policy
-          </a>
-        </li>
-        <li>
-          <a href="/Licensing" className="hover:underline me-4 md:me-6">
-            Licensing
           </a>
         </li>
         <li>
