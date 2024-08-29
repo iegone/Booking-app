@@ -7,9 +7,9 @@ export const Button = ({ className, ...rest }: Props) => {
   return (
     <button
       className={clsx(
-        "bg-indigo-500 text-white ",
+        "bg-[#0064B3] text-white ",
         "px-5 py-2 leading-6",
-        "rounded-md ",
+        "rounded-full ",
         "font-semibold tracking-wide",
         "cursor-pointer",
         "inline-flex items-center justify-center ",

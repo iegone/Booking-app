@@ -1,0 +1,83 @@
+/* src/styles/calendar.css */
+.react-calendar {
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0064B3;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.react-calendar__navigation button {
+  color: white;
+  min-width: 44px;
+  background: none;
+}
+
+.react-calendar__navigation__label {
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+  color: #0064B3; 
+  text-decoration: none ;
+  margin-bottom: 10px;
+}
+abbr:where([title]) {
+    text-decoration: none;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 10px 0;
+}
+
+.react-calendar__month-view__days__day {
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__tile--now {
+  background: #e5f3e1; /* Tailwind bg-green-100 */
+  border-radius: 8px;
+}
+
+.react-calendar__tile--active {
+  background: #0064B3; /* Tailwind bg-green-500 */
+  color: white;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--hover:hover {
+  background-color: #0064B3; /* Tailwind bg-green-600 */
+  color: white;
+  border-radius: 8px;
+}
+
+button {
+  outline: none;
+}
+
+button:disabled {
+  background: none;
+}
