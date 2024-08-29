@@ -9,10 +9,11 @@ export default function Header() {
           <a href="/About" className="hover:underline me-4 md:me-6">
             About
           </a>
-        </li>
-        <li>
-          <a href="/Contact" className="hover:underline">
+          <a href="/Contact" className="hover:underline me-4 md:me-6">
             Contact
+          </a>
+          <a href="/Booking" className="hover:underline me-4 md:me-6">
+            Booking
           </a>
         </li>
       </ul>
