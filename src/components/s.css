@@ -1,0 +1,39 @@
+
+.calendar-container,
+.time-container {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+.calendar-container .month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 10px;
+}
+
+.calendar-container .weekdays,
+.calendar-container .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-container .weekdays div,
+.calendar-container .days div {
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar-container .days div.active {
+  background-color: var(--main-color);
+  color: var(--white);
+  border-radius: 50px;
+}
+
+.calendar-container .days div.prev-date,
+.calendar-container .days div.next-date {
+  color: var(--gray);
+}
